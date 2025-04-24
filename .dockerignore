@@ -1,0 +1,14 @@
+__pycache__/
+*.__pycache__
+*.pyc
+*.pyo
+*.env
+*.git
+.dockerignore
+.gitignore
+*.DS_Store
+*.egg-info/
+*.egg
+*.log
+examples/
+tests/
