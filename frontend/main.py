@@ -88,7 +88,11 @@ if btn == True:
             st.write("Datos del paciente:")
             st.dataframe(df)
             
-            diagnostico = execute_prediction(df)
+            try:
+               diagnostico = execute_prediction(df)
+            except Exception as e:
+                st.write("Ocurrió un error al procesar los datos. Por favor, inténtelo de nuevo.")
+                st.error(f"Error: {e}")                
 
             # Call the get_diagnostico function to get a random diagnosis
             st.write("El diagnóstico de su paciente es:", diagnostico)

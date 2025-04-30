@@ -3,6 +3,7 @@ import pandas as pd
 from fastapi import FastAPI
 import uvicorn
 import logging
+import os
 
 logger = logging.getLogger(__name__)
 
@@ -34,6 +35,5 @@ async def procesar_diagnostico():
         return {"error": "Error en la predicción"}
     return {'diagnostico': prediction[0]}
 
-
 if __name__ == "__main__":
-    uvicorn.run("app:app",host="0.0.0.0",port=8000, reload=True)
+    uvicorn.run("main:app",host="0.0.0.0",port=8000, reload=True)

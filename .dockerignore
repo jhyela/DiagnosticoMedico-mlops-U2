@@ -5,6 +5,8 @@ __pycache__/
 *.env
 taller_mlops-env
 taller_mlops-env/
+images/
+*.md
 .env
 .git
 .dockerignore
@@ -13,5 +15,3 @@ taller_mlops-env/
 *.egg-info/
 *.egg
 *.log
-examples/
-tests/

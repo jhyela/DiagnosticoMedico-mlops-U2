@@ -5,6 +5,9 @@ __pycache__/
 *.env
 taller_mlops-env
 taller_mlops-env/
+frontend/
+images/
+*.md
 .env
 .git
 .dockerignore
