@@ -1,0 +1,16 @@
+__pycache__/
+*.__pycache__
+*.pyc
+*.pyo
+*.env
+taller_mlops-env
+.env
+.git
+.dockerignore
+.gitignore
+*.DS_Store
+*.egg-info/
+*.egg
+*.log
+examples/
+tests/
