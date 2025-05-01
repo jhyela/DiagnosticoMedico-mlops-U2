@@ -7,7 +7,7 @@ Dados los avances tecnológicos, en el campo de la medicina la cantidad de infor
 # Diseño de Pipeline de ML
 El siguiente modelo de pipeline de ML pretende dar solución a los requerimientos planteados en la descripción del problema anterior. 
 
-![Pipeline Prpuesto](./images/pipeline_ML-2025-04-23-2130.png)
+![Pipeline Propuesto](./images/pipeline_ML-2025-04-23-2130.png)
 
 # Fuente de datos
 Para solventar esta problemática, tenemos como input de datos las historias clínicas de cada paciente, adicionalmente esperamos contar con el resultado de las pruebas de laboratorio, los examenes previamente realizados a igual que cualquier diagnóstico médico que se le haya realizado al paciente y que no esté en su historia clínica. Por otro lado, esperamos tener acceso a bases de datos especializadas donde se encuentren diagnósticos de enfermedades raras al igual que enfermedades comunes que nos ayuden a poder clasificar los pacientes según sus síntomas.
@@ -45,4 +45,18 @@ Esta tarea se realiza una vez la modelo esta desplegado en producción y el obje
 El desempeño del ML se puede degradar principalmente por cambios en los datos de entrada al mismo, o por cambios en los requerimientos por parte de los interesados o en algunos casos por la actualización de dependencias de alguno de los componentes del modelo.
 
 
+
+# Aplicación para Detección de Enfermedades
+
+1. Correr en Docker el comando : docker-compose up -d --build
+    Esto creara dos contenedores Backend y Frontend
+    ![Contenedores Docker](./images/contenedores.JPG)
+
+2. En un browser ingresar al front mediante la URL: http://localhost:8501 , esto levantara una página de captura de datos en Stremalit como se ve en la siguiente imagen.
+   
+   ![Página de captura de datos](./images/Front_Streamlit.JPG)
+
+3. Despues de aceptar la política de uso de los datos y llenar los campos, el resultado del diagnóstico médico se visualizara en la parte inferior.
+
+    ![Diagnóstico](./images/Front_Streamlit_diagnostico.JPG)
 
