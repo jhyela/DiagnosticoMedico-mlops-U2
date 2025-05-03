@@ -48,16 +48,25 @@ El desempeño del ML se puede degradar principalmente por cambios en los datos d
 
 # Aplicación para Detección de Enfermedades
 
-1. Correr en Docker el comando : docker-compose up -d --build
-   
-    Esto creara dos contenedores Backend y Frontend
-    ![Contenedores Docker](./images/contenedores.JPG)
+El archivo principal de esta aplicación es docker-compose up -d --build.
+La estructura de directorios del proyecto es: 
 
-3. En un browser ingresar al front mediante la URL: http://localhost:8501 , esto levantara una página de captura de datos en Stremalit como se ve en la siguiente imagen.
+
+![Estructura de directorios](./images/directorios.JPG)
+
+1. Correr en Docker el comando : 
+        
+        docker-compose up -d --build
+   
+    ![Contenedores Docker](./images/contenedores.JPG)
+        
+        Esto creara dos contenedores Backend y Frontend
+
+2. En un browser ingresar al front mediante la URL: http://localhost:8501 , esto levantara una página de captura de datos en Stremalit como se ve en la siguiente imagen.
    
    ![Página de captura de datos](./images/Front_Streamlit.JPG)
 
-4. Despues de aceptar la política de uso de los datos y llenar los campos, el resultado del diagnóstico médico se visualizara en la parte inferior.
+3. Despues de aceptar la política de uso de los datos y llenar los campos, el resultado del diagnóstico médico se visualizara en la parte inferior.
 
     ![Diagnóstico](./images/Front_Streamlit_diagnostico.JPG)
 
