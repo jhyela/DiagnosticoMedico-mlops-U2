@@ -13,4 +13,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Run one-line script
-      run: CI/CD en acción. Ejecutando tareas …
+      run:  echo "CI/CD en acción. Ejecutando tareas …"
+
