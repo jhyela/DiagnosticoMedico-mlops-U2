@@ -5,6 +5,8 @@ services:
     image: backend
     ports:
       - 8000:8000
+    volumes:
+      - ./storage:/storage
   frontend:
     container_name: frontend
     build: ./frontend
@@ -13,3 +15,5 @@ services:
       - 8501:8501
     depends_on:
       - backend
+    volumes:
+      - ./storage:/storage
