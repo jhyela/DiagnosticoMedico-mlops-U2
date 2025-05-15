@@ -1,4 +1,4 @@
-# Objetivo de Este Repositorio Git
+# Objetivo de este Repositorio Git
 Repositorio para entregar las actividades de la materia Machine Learning Operations(MLOps) de la Maestria en IA - Universidad Icesi.
 
 # Descripción del Problema
@@ -25,12 +25,27 @@ Debido los diversos formatos que se podrían tener como datos estructurados y no
 # Preparación de los Datos
 En la etapa de preparación de datos esperamos hacer ingeniería de características (featuring engineering) y selección de características (feature selection) usando algoritmos tradicionales para esta tarea como PCA y LDA (análisis de discriminante lineal).
 
+ Para balancear los datos principalmente por las enfermedades huérfanas, podemos usar técnicas como:
+ - Oversampling: SMOTE o ADASYN para enfermedades huérfanas.
+ - Undersampling: Si los datos comunes son abundantes.
+ - Pesos en el modelo: Asignar mayor peso a la clase minoritaria.
+
 # Selección y Evaluación de Modelos de ML
-Para encontrar la mejor solución para el problema planteado, se propone utilizar algoritmos como Regresión logística múltiple, Random Forest, XGBoost, redes neuronales (MLP y Transformers) y ensambles como máquinas de soporte vectorial y GBM.
+Para encontrar la mejor solución para el problema planteado, se propone utilizar algoritmos como Regresión logística múltiple, Random Forest, XGBoost, redes neuronales (MLP o Transformers) y ensambles como máquinas de soporte vectorial y GBM.
 
 # Entrenamiento, Evaluación y Pruebas del Modelo
 En esta parte de pipeline dividimos de forma aleatoria los datos de entrada en 3 partes para realizar entrenamiento, evaluación y pruebas, generalmente la división de datos se realiza en porcentaje de 70%, 20% y 10% respectivamente.
-Para medir el desempeño de los modelos seleccionados se realizará una comparación en métricas como el accuracy, recall, F1-score y el MSE (Error Cuadrático Medio).
+Para medir el desempeño de los modelos seleccionados se realizará una comparación en métricas como :
+
+ - Accuracy (Presión): Proporción de predicciones correctas sobre el total.
+ - Recall (Sensibilidad): Proporción de casos positivos reales detectados.
+ - F1-score: Media armónica entre precisión y recall. Ideal para equilibrar ambas métricas.
+ - MSE (Error Cuadrático Medio): Estimador mide el promedio de los errores al cuadrado.
+
+ Para clases desbalanceadas debido principalmente a las enfermedades raras se podria utilizar:
+ - Recall por clase (Sensibilidad por enfermedad): Asegurar que las enfermedades raras no se pasen por alto.
+ - Precisión por clase: Evitar sobrediagnóstico de enfermedades raras.
+ - Average Precision (AP): Versión ponderada del recall, útil para desbalance.
 
 # Evaluación de Requerimientos del Negocio
 En esta parte del pipeline evaluaremos si el modelo de Machine Learning seleccionado satisface las necesidades del negocio, si la clasificación de la gravedad de las enfermedades satisface los requerimientos de los interesados en el modelo de clasificación; si se concluye que el modelo no satisface las necesidades del negocio nos devolveremos hasta la fase de preparación de los datos y evalución de características y volveremos a iniciar el proceso.
