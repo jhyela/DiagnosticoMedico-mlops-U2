@@ -25,5 +25,4 @@ jobs:
         pip install pytest pytest-cov
         
     - name: Run pytest
-      run: |
-        pytest tests/ -v
+      run: pytest --cov=./ --cov-report=xml tests/
