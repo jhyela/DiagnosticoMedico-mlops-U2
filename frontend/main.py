@@ -114,7 +114,7 @@ if btn == True:
                 'Nombre': [nm_paciente],
                 'Sintomas': [sintomas],
                 'Temperatura': [temperatura],
-                'Genero': [genero],
+                'Sexo': [genero],
                 'Edad': [edad],
                 'Glucosa': [glucosa],
                 'Presion': [presion],

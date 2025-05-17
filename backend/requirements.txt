@@ -2,3 +2,6 @@ fastapi
 uvicorn
 logging
 pandas
+imblearn
+scikit-learn
+joblib
