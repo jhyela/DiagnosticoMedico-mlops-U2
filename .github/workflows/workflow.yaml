@@ -23,7 +23,3 @@ jobs:
     - name: Set up Python
       with:
         python-version: '3.12'
-
-    - uses: actions/checkout@v4
-    - name: Run one-line script
-      run:  echo "CI/CD terminado con éxito!!!!"
