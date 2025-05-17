@@ -12,9 +12,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: thollander/actions-comment-pull-request@v3
-    - name: PR contra main
-      with:
+      - name: Pr contra main
+        uses: mshick/add-pr-comment@v2
+        with:
           message: "CI/CD en acción. Ejecutando tareas …"
       
   test:
