@@ -1,21 +1,73 @@
-ENFERMEDAD CRÓNICA;0.269;2025-05-14 15:22:58
-ENFERMEDAD TERMINAL;0.571;2025-05-14 15:23:05
-ENFERMEDAD CRÓNICA;0.443;2025-05-14 15:23:07
-NO ENFERMO;0.903;2025-05-14 15:23:08
-ENFERMEDAD LEVE;0.919;2025-05-14 15:23:09
-NO ENFERMO;0.386;2025-05-14 15:23:10
-ENFERMEDAD LEVE;0.721;2025-05-14 15:23:11
-NO ENFERMO;0.373;2025-05-14 15:23:12
-ENFERMEDAD TERMINAL;0.934;2025-05-14 15:23:13
-ENFERMEDAD CRÓNICA;0.129;2025-05-14 15:23:14
-ENFERMEDAD AGUDA;0.687;2025-05-14 15:23:15
-ENFERMEDAD TERMINAL;0.604;2025-05-14 15:23:15
-ENFERMEDAD CRÓNICA;0.344;2025-05-14 15:23:16
-ENFERMEDAD CRÓNICA;0.417;2025-05-14 15:23:17
-ENFERMEDAD LEVE;0.574;2025-05-14 15:23:18
-ENFERMEDAD CRÓNICA;0.813;2025-05-14 15:23:19
-ENFERMEDAD LEVE;0.233;2025-05-14 15:23:20
-ENFERMEDAD LEVE;0.083;2025-05-14 15:23:21
-NO ENFERMO;0.533;2025-05-14 15:23:22
-ENFERMEDAD LEVE;0.954;2025-05-14 15:23:50
-ENFERMEDAD AGUDA;0.765;2025-05-16 16:41:20
+ENFERMEDAD AGUDA;0.132;2025-05-17 14:44:43
+ENFERMEDAD AGUDA;0.233;2025-05-17 14:45:07
+NO ENFERMO;0.687;2025-05-17 14:45:20
+NO ENFERMO;0.718;2025-05-17 14:45:28
+NO ENFERMO;0.628;2025-05-17 14:45:41
+ENFERMEDAD CRÓNICA;0.08;2025-05-17 14:45:53
+Error ;-1;2025-05-17 14:50:42
+Error ;-1;2025-05-17 14:51:51
+Error ;-1;2025-05-17 14:51:53
+Error ;-1;2025-05-17 14:53:04
+ENFERMEDAD CRÓNICA;0.08;2025-05-17 14:58:17
+ENFERMEDAD CRÓNICA;0.08;2025-05-17 14:58:18
+ENFERMEDAD AGUDA;0.358;2025-05-17 14:58:25
+Error al cargar el modelo;-9;2025-05-17 15:23:56
+ENFERMEDAD AGUDA;0.024;2025-05-17 15:24:11
+Error al cargar el modelo;-9;2025-05-17 15:25:46
+Error al cargar el modelo;-9;2025-05-17 15:25:50
+Error al cargar el modelo;-9;2025-05-17 15:25:52
+Error al cargar el modelo;-9;2025-05-17 15:25:53
+Error al cargar el modelo;-9;2025-05-17 15:25:54
+Error al cargar el modelo;-9;2025-05-17 15:35:14
+Error al cargar el modelo;-9;2025-05-17 15:35:26
+Error al cargar el modelo;-9;2025-05-17 15:35:32
+Error al cargar el modelo;-9;2025-05-17 15:35:36
+Error al cargar el modelo;-9;2025-05-17 15:35:38
+Error al cargar el modelo;-9;2025-05-17 15:35:39
+Error al cargar el modelo;-9;2025-05-17 15:35:40
+Error al cargar el modelo;-9;2025-05-17 15:35:40
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 15:40:14
+ENFERMEDAD AGUDA;0.85;2025-05-17 15:45:51
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 15:51:12
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 15:51:15
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:03:43
+ENFERMEDAD AGUDA;0.024;2025-05-17 16:05:27
+ENFERMEDAD AGUDA;0.024;2025-05-17 16:05:33
+ENFERMEDAD AGUDA;0.024;2025-05-17 16:14:14
+ENFERMEDAD AGUDA;0.024;2025-05-17 16:14:16
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:14:41
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:14:45
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:16:59
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:17:05
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:17:11
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:17:15
+ENFERMEDAD AGUDA;0.024;2025-05-17 16:17:24
+ENFERMEDAD AGUDA;0.024;2025-05-17 16:17:25
+ENFERMEDAD AGUDA;0.15;2025-05-17 16:17:30
+NO ENFERMO;0.908;2025-05-17 16:17:39
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:26:21
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:26:25
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:26:28
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:26:29
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:26:30
+NO ENFERMO;0.908;2025-05-17 16:26:34
+ENFERMEDAD LEVE;0.021;2025-05-17 16:26:50
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:26:58
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:26:59
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:27:00
+ENFERMEDAD LEVE;0.021;2025-05-17 16:41:12
+NO ENFERMO;0.384;2025-05-17 16:41:22
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:41:46
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:41:48
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:42:20
+NO ENFERMO;0.384;2025-05-17 16:42:28
+Error al cargar el modelo setting an array element with a sequence.;-9;2025-05-17 16:42:47
+ENFERMEDAD TERMINAL;0.0;2025-05-17 17:39:34
+ENFERMEDAD TERMINAL;0.0;2025-05-17 17:39:48
+ENFERMEDAD TERMINAL;0.0;2025-05-17 17:40:00
+ENFERMEDAD TERMINAL;0.0;2025-05-17 17:40:11
+ENFERMEDAD TERMINAL;0.0;2025-05-17 17:40:23
+ENFERMEDAD AGUDA;0.007;2025-05-17 17:40:33
+ENFERMEDAD AGUDA;0.004;2025-05-17 17:40:48
+ENFERMEDAD AGUDA;0.004;2025-05-17 17:40:55
+ENFERMEDAD TERMINAL;0.0;2025-05-17 17:41:08

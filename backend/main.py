@@ -89,33 +89,57 @@ async def procesar_diagnostico(data: dict):
         datos = pd.DataFrame.from_dict({k: [v] for k, v in data.items()})
 
     except Exception as e:
+        print(f"Error al convertir los datos a DataFrame: {e}")
         logger.error(f"Error al convertir los datos a DataFrame: {e}")
         return {"error": "Error al procesar los datos"}
     
-    print("Datos recibidos:", datos)
+    print("Datos recibidos (backend):", datos,str(type(datos)))
+    #print("Datos recibidos (backend):", datos.to_dict(orient='records')[0])
 
     logger.info("Recibiendo datos para predicción")
    
     now = datetime.datetime.now()
+
+    df_diagnostico = {}
+    df_diagnostico['Nombre'] = datos['Nombre'].values[0]
+    df_diagnostico['Sintomas'] = datos['Sintomas'].values[0]
+    df_diagnostico['Sexo'] = datos['Sexo'].values[0]
+    df_diagnostico['Urgencia'] = datos['Urgencia'].values[0]
+    df_diagnostico['Edad'] = datos['Edad'].values[0]
+    df_diagnostico['Glucosa'] = datos['Glucosa'].values[0]
+    df_diagnostico['Presion'] = datos['Presion'].values[0]
+    df_diagnostico['Temperatura'] = datos['Temperatura'].values[0]
+    
+    df_diagnostico = pd.DataFrame(df_diagnostico, index=[0])
+
+    print("Datos para el modelo (backend):", df_diagnostico)
     
     try :
-        prediction,probabilidad = get_diagnostico(datos)
+        prediction,probabilidad = get_diagnostico(df_diagnostico)
                
         print("Predicción en backend:", prediction,probabilidad)  
         
     except Exception as e:
-        #logger.error(f"Error en la predicción: {e}")
+        logger.error(f"Error en la predicción: {e}")
         print(f"Error en la predicción: {e}")    
         return {"error": "Error en la predicción"}
     
+    date_string = now.strftime("%Y-%m-%d %H:%M:%S")
+
     if os.path.isfile(filename):
         try:
-          date_string = now.strftime("%Y-%m-%d %H:%M:%S")
+
           with open(filename, "a+") as f:
            f.write(prediction + separador + str(probabilidad) + separador + date_string + "\n")  
         except Exception as e:
            logger.error(f"Error al escribir en el histórico de datos: {e}")
-    
+    else:
+        try:
+          with open(filename, "w") as f:
+              f.write(prediction + separador + str(probabilidad) + separador + date_string + "\n")  
+        except Exception as e:
+           logger.error(f"Error al escribir en el histórico de datos: {e}")
+           
     return {'diagnostico': prediction, 'probabilidad': str(probabilidad)}
 
 

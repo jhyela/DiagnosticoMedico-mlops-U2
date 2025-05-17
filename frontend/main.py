@@ -58,7 +58,8 @@ def execute_prediction(datos: dict):
         # Si la respuesta es exitosa, devuelve el diagnóstico
         result = response.json()
         print('resultado en execute_prediction',result)
-        return result['diagnostico'] + " con probabilidad de " + str(result['probabilidad']) + "%"
+        #return result['diagnostico'] + " con probabilidad de " + str(result['probabilidad']) + "%"
+        return result['diagnostico']
     else:
         # Si hay un error, devuelve None
         print('Error en la predicción:', response.status_code)
@@ -90,8 +91,11 @@ with st.form(key='my_form'):
     edad = st.select_slider('Edad del paciente :', options=[i for i in range(0,120)])
     genero = st.radio('Género del paciente :',['Masculino','Femenino'])
     genero = 1 if genero == 'Masculino' else (2 if genero == 'Femenino' else 0)    
+    st.write("La temperatura debe estar entre 30 y 45 grados centígrados.")
     temperatura = st.number_input('Temperatura del paciente ('+chr(176)+'C) :', min_value=30, max_value=45, step=1)
+    st.write("La glucosa debe estar entre 0 y 500 mg/dL.")
     glucosa = st.number_input('Nivel de glucosa en sangre (mg/dL) :', min_value=0, max_value=500, step=1)
+    st.write("La presión arterial debe estar entre 0 y 300 mmHg.")
     presion = st.number_input('Presión arterial (mmHg) :', min_value=0, max_value=300, step=1)
     urgencia = st.select_slider('Severidad de la condición del paciente (siento 1 no tan crítico y 10 estado muy crítico) :', options=[i for i in range(1,11)])
     btn = st.form_submit_button('Enviar')

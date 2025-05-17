@@ -2,3 +2,6 @@ streamlit
 pandas
 numpy
 requests
+imblearn
+scikit-learn
+joblib
