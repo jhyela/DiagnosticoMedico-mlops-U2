@@ -35,4 +35,4 @@ jobs:
         pytest tests/ -v
 
     - name: Run one-line script
-      run:  echo "CI/CD terminado con éxito!!!!"  
+      run:  echo "CI/CD terminado con éxito!!!!"
