@@ -27,3 +27,6 @@ jobs:
     - uses: actions/checkout@v4        
     - name: Run pytest
       run: pytest --cov=./ --cov-report=xml tests/
+      
+    - name: Run one-line script
+      run:  echo "CI/CD terminado con éxito!!!!"  
