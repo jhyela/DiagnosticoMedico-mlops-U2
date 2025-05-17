@@ -99,7 +99,7 @@ async def procesar_diagnostico(data: dict):
     now = datetime.datetime.now()
     
     try :
-        prediction,probabilidad = get_diagnostico()
+        prediction,probabilidad = get_diagnostico(datos)
                
         print("Predicción en backend:", prediction,probabilidad)  
         
@@ -108,14 +108,15 @@ async def procesar_diagnostico(data: dict):
         print(f"Error en la predicción: {e}")    
         return {"error": "Error en la predicción"}
     
-    try:
-        date_string = now.strftime("%Y-%m-%d %H:%M:%S")
-        with open(filename, "a+") as f:
-         f.write(prediction[0] + separador + str(probabilidad) + separador + date_string + "\n")  
-    except Exception as e:
-        logger.error(f"Error al escribir en el histórico de datos: {e}")
+    if os.path.isfile(filename):
+        try:
+          date_string = now.strftime("%Y-%m-%d %H:%M:%S")
+          with open(filename, "a+") as f:
+           f.write(prediction + separador + str(probabilidad) + separador + date_string + "\n")  
+        except Exception as e:
+           logger.error(f"Error al escribir en el histórico de datos: {e}")
     
-    return {'diagnostico': prediction[0], 'probabilidad': str(probabilidad)}
+    return {'diagnostico': prediction, 'probabilidad': str(probabilidad)}
 
 
 if __name__ == "__main__":
