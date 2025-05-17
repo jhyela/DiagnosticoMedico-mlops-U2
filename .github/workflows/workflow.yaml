@@ -1,0 +1,38 @@
+name: taller
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run one-line script
+      run:  echo "CI/CD en acción. Ejecutando tareas …"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/setup-python@v4
+    - name: Set up Python
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-cov  # Instala pytest y opcionalmente coverage
+
+    - name: Run pytest
+      run: |
+        pytest tests/ -v
+
+    - name: Run one-line script
+      run:  echo "CI/CD terminado con éxito!!!!"  
