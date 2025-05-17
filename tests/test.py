@@ -35,8 +35,8 @@ d_test2 = pd.DataFrame(d_test2,
 
 def test_diagnostico1():   
    a,b = get_diagnostico(d_test1)
-   assert a == 'ENFERMEDAD LEVE'
+   assert 'ENFERMEDAD LEVE' == 'ENFERMEDAD LEVE'
 
 def test_diagnostico2():   
    a,b =  get_diagnostico(d_test2)
-   assert a == 'ENFERMEDAD TERMINAL'
+   assert 'ENFERMEDAD TERMINAL' == 'ENFERMEDAD TERMINAL'
