@@ -89,4 +89,3 @@ La estructura de directorios del proyecto es:
 3. Después de aceptar la política de uso de los datos y llenar los campos, el resultado del diagnóstico médico se visualizara en la parte inferior.
 
     ![Diagnóstico](./images/Front_Streamlit_diagnostico.JPG)
-
